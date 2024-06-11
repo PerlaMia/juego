@@ -1,0 +1,17 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+canvas {
+  border: 1px solid black;
+  display: block;
+  margin: 10 auto;
+}
+ #backgroundCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }

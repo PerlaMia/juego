@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>peligro en la cuidad</title>
+  <link rel="stylesheet" href="styleecenario.css">
+</head>
+<body>
+  <canvas id="cityCanvas" width="800" height="600"></canvas>
+  <canvas id="backgroundCanvas" width="800" height="600"></canvas>
+  <script src="scriptecenario.js"></script>
+
+  <script>
+    const canvas = document.getElementById('cityCanvas');
+    const ctx = canvas.getContext('2d');
+      
+    const backgroundCanvas = document.getElementById('backgroundCanvas');
+    const backgroundCtx = backgroundCanvas.getContext('2d');
+
+    const background = new Image();
+    background.src = 'nubes.jpg';
+    
+    background.onload = function() {
+      backgroundCtx.drawImage(background, 0, 0, backgroundCanvas.width, backgroundCanvas.height);
+    };
+  </script>
+</body>
+</html>
